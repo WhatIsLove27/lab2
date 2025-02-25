@@ -2,8 +2,11 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 p-4 text-center text-white mx-auto"> {/* Example Tailwind styling */}
-      <p>&copy; {new Date().getFullYear()} My Website</p>
+    <footer className="bg-gray-800 p-4 text-center text-white mt-auto">
+      <div className='container mx-auto'>
+        <p >2025 IVT-22-1 Nikitin Vladislav</p>
+
+      </div>
     </footer>
   );
 };
