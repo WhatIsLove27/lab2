@@ -5,7 +5,8 @@ export default class About extends Component {
     return (
       
         <div>
-            <h2>О нас</h2>
+            <h1>О нас</h1>
+             <br />
             <p>Информация о компании.</p>
         </div>
     )
