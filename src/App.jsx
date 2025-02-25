@@ -10,9 +10,9 @@ import './index.css';
 function App() {
   return (
     <BrowserRouter>
-      <div className="App"> {}
+      <div className="App flex flex-col min-h-screen"> {}
         <Header />
-        <main className="container mx-auto p-4 "> {}
+        <main className="container mx-auto p-60"> {}
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
