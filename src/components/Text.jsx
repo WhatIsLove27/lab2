@@ -1,11 +1,11 @@
-const Text = ({text}) => {
-    return (
-        <>
-            <span className='text-[#F5FEF0]'>
-                {text}
-            </span>
-        </>
-    );
+import React from 'react';
+
+const Text = ({ children, className = "", as: Tag = 'p', ...props }) => {
+  return (
+    <Tag className={`text-white ${className}`} {...props}>
+      {children}
+    </Tag>
+  );
 };
 
 export default Text;
