@@ -1,18 +1,14 @@
 import React from 'react';
 import Text from './Text';
 
-const Button = ({ type="button", onClick, imageStart, text, imageEnd, height, className, width }) => {
+const Button = ({ type = "button", onClick, text, className = "", width = "auto",height = "h-[45px]" }) => {
     return (
-        <>
-            <button type={type} onClick={onClick} className={` bg-[#ffffff]  text-amber-100 ${height} ${width} rounded-[10px] items-center flex ${className}`}>
-                    <div className={`flex gap-3 items-center `}> 
-                        <Text text={text} />
-                    </div>
-
-                   
-            </button>
-        </>
-    );
+    <button type={type} onClick={onClick} className={`${height} ${width === "auto" ? "w-auto" : width} rounded-[10px] items-center flex justify-center px-4 transition-colors${className}`}>
+        <Text className="text-white font-medium">
+            {text}
+        </Text>
+    </button>
+  );
 };
 
 export default Button;
